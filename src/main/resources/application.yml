@@ -1,0 +1,10 @@
+server:
+  address: '0.0.0.0'
+  port: 10081
+spring:
+  application:
+    name: session-service
+  data:
+    redis:
+      host: localhost
+      port: 6379
