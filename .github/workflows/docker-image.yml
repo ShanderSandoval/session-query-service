@@ -87,7 +87,7 @@ jobs:
             echo "📌 Iniciando el nuevo contenedor con variables de entorno..."
             sudo docker run -d \
               --name ${{ secrets.DOCKER_IMAGE_NAME }} \
-              -p 80:6379 \
+              -p 80:10081 \
               -e SPRING_DATA_REDIS_HOST=${{ secrets.SPRING_DATA_REDIS_HOST }} \
               -e SPRING_DATA_REDIS_PORT=${{ secrets.SPRING_DATA_REDIS_PORT }} \
               ${{ secrets.DOCKER_IMAGE_NAME }}:latest
